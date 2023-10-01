@@ -30,6 +30,7 @@
       2. Add ts
       3. Add html
       4. Add css
+<<<<<<< HEAD
 
 
 7 Showing tags
@@ -44,4 +45,6 @@
     Add Tag route to AppRoutes.js
     Add getAllByTag fucntion to Foods
     Use Tag param in Home page.js
+=======
+>>>>>>> b4579a24edfd85b80472f4eecf47df6355a468ec
       

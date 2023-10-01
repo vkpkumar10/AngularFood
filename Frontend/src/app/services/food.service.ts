@@ -21,10 +21,13 @@ export class FoodService {
   }
 
 
+<<<<<<< HEAD
   getAllTags() : Tag[] {
 
     return sample_tags ;
   }
 
 
+=======
+>>>>>>> b4579a24edfd85b80472f4eecf47df6355a468ec
 }
