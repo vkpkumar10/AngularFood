@@ -21,3 +21,27 @@
         2. Add html
         3. Add css
         
+6. Search
+  1. Add method to Food Service
+  2. Add search oute
+  3. Show search result in Home compoent
+  4. Generate search component
+      1. Add to home component
+      2. Add ts
+      3. Add html
+      4. Add css
+
+
+7 Showing tags
+
+    1. Add sample tags to data.js
+    2. Add getAllTags function to foodService.js
+    3. Add Tags Component
+        Add css
+    4. use Tag Componet in HomePages
+
+  Showing food by Tag:
+    Add Tag route to AppRoutes.js
+    Add getAllByTag fucntion to Foods
+    Use Tag param in Home page.js
+      
