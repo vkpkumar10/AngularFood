@@ -13,12 +13,19 @@ export class HomeComponent implements OnInit {
   constructor(
     private foodservice: FoodService,
     private activatedRoute: ActivatedRoute
-  ) {
-    activatedRoute.params.subscribe((param) => {
+  ) {}
+
+  ngOnInit(): void {
+    this.activatedRoute.params.subscribe((param) => {
       if (param.saerchTerm)
-        this.foods = foodservice.getAllFoodBySearchFood(param.saerchTerm);
-      else this.foods = foodservice.getAllFood();
+        this.foods = this.foodservice.getAllFoodBySearchFood(param.saerchTerm);
+      else if (param.tag)
+
+        this.foods = this.foodservice.getAllFoodByTags(param.tag);
+
+      else this.foods = this.foodservice.getAllFood();
     });
   }
-  ngOnInit(): void {}
 }
+
+

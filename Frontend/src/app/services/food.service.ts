@@ -1,33 +1,41 @@
 import { Injectable } from '@angular/core';
-import { Food  } from '../shared/models/Food';
-import { Tag  } from '../shared/models/Tag';
-import { sample_foods  ,sample_tags} from 'src/data';
+import { Food } from '../shared/models/Food';
+import { Tag } from '../shared/models/Tag';
+import { sample_foods, sample_tags } from 'src/data';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FoodService {
+  constructor() {}
 
-  constructor() { }
-
-  getAllFood() :Food[] {
-
-    return sample_foods ;
-
+  getAllFood(): Food[] {
+    return sample_foods;
   }
 
-  getAllFoodBySearchFood(searchitem:String) : Food[] {
-    return sample_foods.filter( item => item.name.toLowerCase().includes( searchitem.toLowerCase())) ;
+  getAllFoodBySearchFood(searchitem: String): Food[] {
+    return sample_foods.filter((item) =>
+      item.name.toLowerCase().includes(searchitem.toLowerCase())
+    );
   }
 
-
-<<<<<<< HEAD
-  getAllTags() : Tag[] {
-
-    return sample_tags ;
+  getAllTags(): Tag[] {
+    return sample_tags;
   }
 
+  getAllFoodByTags(tag: string): Food[] {
+    return tag == 'All'
+      ? this.getAllFood()
+      : this.getAllFood().filter((food) => food.tags?.includes(tag));
+  }
 
-=======
->>>>>>> b4579a24edfd85b80472f4eecf47df6355a468ec
+  // getAllFoodsByTag(tag: string): Food[] {
+  //   return tag == "All" ?
+  //     this.getAll() :
+  //     this.getAll().filter(food => food.tags?.includes(tag));
+  // }
+
+  getFoodById(foodId: string): Food {
+    return this.getAllFood().find((f) => f.id == foodId) ?? new Food();
+  }
 }

@@ -30,7 +30,6 @@
       2. Add ts
       3. Add html
       4. Add css
-<<<<<<< HEAD
 
 
 7 Showing tags
@@ -45,6 +44,40 @@
     Add Tag route to AppRoutes.js
     Add getAllByTag fucntion to Foods
     Use Tag param in Home page.js
-=======
->>>>>>> b4579a24edfd85b80472f4eecf47df6355a468ec
+      
+
+ 8 Tag Bar 
+     create tag model
+     add sample tag to data.ts
+     FoodSerive 
+       add get all tag method
+       add get all food by tag method
+     add Tags route
+     show tag result in Home compentet
+     generate tags component
+        add to home compoent
+        add ts
+        add html
+        add css
+              
+
+   9  cart page
+         create cartitem  model  
+         create cart model
+         generate Cart service
+         add to Cart button in food page
+         generate cart page component
+            Add route
+            add ts
+            add tml
+            add css
+10 Not found
+  1 Generate component
+    1. Add ts
+    2. Add html
+    3. Add css
+  2. Add to Pages
+    1. Home page
+    2. Food Page
+    3. Cart Page
       
