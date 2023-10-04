@@ -81,3 +81,18 @@
     2. Food Page
     3. Cart Page
       
+ 11 Connect to Backend
+     create backend folder
+     npm init
+     npm install typescrit
+     create tsconfid.jspn
+     create .gitignore
+     copy data.ts to backend/src
+     npm isntall express cors
+     ceate server.ts
+        install @types
+        Add apis
+    npm install nodemon ts-node -- save-dev
+    add urs.ts to frontend
+    add httpclient moducle
+     pdate food service          
